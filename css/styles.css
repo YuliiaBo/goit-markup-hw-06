@@ -451,14 +451,14 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--main-background-colour);
 }
 .modal-input-online {
   width: 264px;
   height: 40px;
   border-radius: 4px;
   outline: transparent;
-  padding-left: 40px;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -471,7 +471,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--main-background-colour);
   margin-right: 24px;
   margin-top: 16px;
 
@@ -495,7 +495,8 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--main-background-colour);
+  border: none;
 }
 .footer-btn-icon {
   margin-left: 16px;
@@ -641,7 +642,7 @@ img {
   min-height: 584px;
 
   transform: translate(-50%, -50%);
-  background: #fcfcfc;
+  background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -684,10 +685,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--btn-background-colour);
 }
 .modal-input:focus + .modal-input-icon {
-  fill: #4d5ae5;
+  fill: var(--btn-background-colour);
 }
 .modal-input::placeholder {
   font-family: "Roboto";
@@ -724,7 +725,7 @@ img {
 }
 
 .modal-input-commt:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--btn-background-colour);
 }
 .input-btn {
   display: flex;
@@ -732,7 +733,7 @@ img {
   align-items: center;
   text-align: center;
   padding: 16px 32px;
-  background: #4d5ae5;
+  background: var(--btn-background-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -745,7 +746,7 @@ img {
   line-height: 24px;
 
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--main-background-colour);
 }
 .modal-input-title {
   margin-bottom: 4px;
@@ -816,7 +817,7 @@ img {
 }
 
 .modal-commt:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--btn-background-colour);
 }
 .is-hidden {
   opacity: 0;
@@ -850,7 +851,7 @@ img {
 .modal-check:checked + .modal-policy::before {
   position: absolute;
   left: 19px;
-  background-color: #404bbf;
+  background-color: var(--btn-background-active);
   border: none;
   background-image: url(../images/check.svg);
   background-position: center;
