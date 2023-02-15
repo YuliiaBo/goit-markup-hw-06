@@ -63,8 +63,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-container {
-}
 
 .our-team-container {
   text-align: center;
@@ -121,8 +119,7 @@ img {
   display: flex;
   gap: 40px;
 }
-.header-item {
-}
+
 .header-link {
   font-weight: 500;
   line-height: 1.5;
@@ -303,8 +300,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-icon {
-}
+
 .soc-link:hover {
   background-color: var(--btn-background-active);
 }
@@ -314,8 +310,6 @@ img {
 
 /* section-clients */
 
-.clients {
-}
 .clients-list {
   display: flex;
   gap: 24px;
@@ -339,8 +333,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-icon {
-}
+
 .clients-link:hover {
   border-color: var(--btn-background-active);
   fill: var(--btn-background-active);
@@ -423,10 +416,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe-form {
-}
-.footer-soc-icon {
-}
+
 .footer-soc-link:hover {
   background-color: #31d0aa;
 }
@@ -445,9 +435,6 @@ img {
   border-radius: 4px;
 }
 .footer-online-form {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -463,9 +450,6 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 2;
   display: flex;
@@ -487,11 +471,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
-  background: #4d5ae5;
+  background: var(--btn-background-colour);
   border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -524,10 +505,6 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-}
-.portfolio-section-item-btn {
-}
-.list {
 }
 .portfolio-btn {
   font-weight: 600;
@@ -669,18 +646,23 @@ img {
   background-color: var(--footer-subtitle-colour);
   border: none;
 
-  /* transition-property: background-color, border-radius, fill;
+  transition: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:focus {
+
+.modal-close:is(:hover, :focus) {
   background-color: var(--btn-background-active);
-  border-radius: 4px;
 }
-/* .modal-close:focus + .modal-close-icon {
+.modal-close-icon {
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 8px;
+  height: 8px;
+}
+.modal-close:is(:hover, :focus) .modal-close-icon {
   fill: var(--main-background-colour);
-} */
-.modal-form {
 }
 
 .modal-input {
@@ -703,9 +685,6 @@ img {
   fill: var(--btn-background-colour);
 }
 .modal-input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -727,9 +706,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input-commt::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -751,9 +727,6 @@ img {
   border: none;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 
@@ -817,9 +790,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-commt::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
